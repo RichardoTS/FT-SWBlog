@@ -9,6 +9,7 @@ import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
+import Students from "./views/students";
 import Characters from "./views/characters";
 import Planets from "./views/planets";
 import Vehicles from "./views/vehicles";
@@ -30,6 +31,7 @@ const Layout = () => {
 						<Route path="/planets" element={<Planets />} />
 						<Route path="/vehicles" element={<Vehicles />} />
 						<Route path="/demo" element={<Demo />} />
+						<Route path="/students" element={<Students />} />
 						<Route path="/single/:theid" element={<Single />} />
 						<Route path="*" element={<h1>May the force be with us... Because It Is Not Found!</h1>} />
 					</Routes>
